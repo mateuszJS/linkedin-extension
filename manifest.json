@@ -8,13 +8,14 @@
   },
   "host_permissions": [
     "https://www.linkedin.com/*"
-],
+  ],
   "permissions": [
     "storage",
     "activeTab",
     "scripting",
     "tabs",
-    "notifications"
+    "notifications",
+    "unlimitedStorage"
   ],
   "action": {
     "default_popup": "popup.html",
@@ -30,5 +31,15 @@
     "32": "/images/get_started32.png",
     "48": "/images/get_started48.png",
     "128": "/images/get_started128.png"
-  }
+  },
+  "web_accessible_resources": [{
+      "resources": [
+        "/images/linkedin_ext_btn_background.png",
+        "/images/linkedin_ext_btn_text.png",
+        "/images/linkedin_ext_dog_face.png",
+        "/images/linkedin_ext_scanning_label.png",
+        "/images/linkedin_ext_radar.png"
+      ],
+      "matches": ["https://www.linkedin.com/*"]
+  }]
 }
